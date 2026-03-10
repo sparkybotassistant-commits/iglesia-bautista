@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Eventos - Iglesia Bautista Para Las Naciones">
+  <title>Eventos - Iglesia Bautista Para Las Naciones</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="https://www.transformandonaciones.com/src/images/logo.png">
+  <style>
+    .coming-soon-page {
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 6rem 2rem;
+      background: linear-gradient(180deg, var(--cream) 0%, var(--cream-dark) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .coming-soon-page::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c9a227' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      opacity: 0.5;
+    }
+    
+    .coming-soon-content {
+      position: relative;
+      z-index: 1;
+    }
+    
+    .coming-soon-icon {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 2rem;
+      background: var(--navy);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: float 3s ease-in-out infinite;
+    }
+    
+    .coming-soon-icon svg {
+      width: 60px;
+      height: 60px;
+      color: var(--gold);
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    
+    .coming-soon-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      color: var(--navy);
+      margin-bottom: 1rem;
+    }
+    
+    .coming-soon-subtitle {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      max-width: 500px;
+      margin: 0 auto 2rem;
+    }
+    
+    .coming-soon-dots {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    
+    .coming-soon-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--gold);
+      border-radius: 50%;
+      animation: pulse-dot 1.5s ease-in-out infinite;
+    }
+    
+    .coming-soon-dot:nth-child(2) { animation-delay: 0.2s; }
+    .coming-soon-dot:nth-child(3) { animation-delay: 0.4s; }
+    
+    @keyframes pulse-dot {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.5); opacity: 0.5; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <a href="contacto.html" class="top-bar-item">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+          </svg>
+          64-14 Woodside Ave, Queens, NY 11377
+        </a>
+      </div>
+      <div class="top-bar-right">
+        <a href="tel:+13474230290" class="top-bar-item">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+          </svg>
+          (347) 423-0290
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="https://www.transformandonaciones.com/src/images/logo.png" alt="Iglesia Bautista Para Las Naciones">
+      </a>
+      
+      <button class="nav-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="programas-de-educacion.html" class="nav-link">Programas de Educación</a>
+        <a href="galeria.html" class="nav-link">Galería</a>
+        <a href="eventos.html" class="nav-link active">Eventos</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Coming Soon Page -->
+  <section class="coming-soon-page">
+    <div class="coming-soon-content">
+      <div class="coming-soon-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+        </svg>
+      </div>
+      
+      <h1 class="coming-soon-title">Próximamente...</h1>
+      <p class="coming-soon-subtitle">Estamos preparando eventos especiales. Vuelve pronto para conocer las próximas actividades de nuestra iglesia.</p>
+      
+      <a href="contacto.html" class="btn btn-primary">Contáctanos</a>
+      
+      <div class="coming-soon-dots">
+        <div class="coming-soon-dot"></div>
+        <div class="coming-soon-dot"></div>
+        <div class="coming-soon-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="https://www.transformandonaciones.com/src/images/logof.png" alt="Iglesia Bautista Para Las Naciones">
+          <p>Una Iglesia conforme al corazón de Dios, transformando vidas y comunidades.</p>
+        </div>
+        
+        <div class="footer-column">
+          <h4 class="footer-title">Contacto</h4>
+          <div class="footer-links">
+            <p>(347) 423-0290</p>
+            <a href="mailto:IBPN64@gmail.com">IBPN64@gmail.com</a>
+            <p>64-14 Woodside Ave<br>Queens, NY 11377</p>
+          </div>
+          <div class="social-links" style="margin-top: 1rem;">
+            <a href="https://www.facebook.com/IBparalasNaciones" target="_blank" rel="noopener">
+              <img src="https://www.transformandonaciones.com/src/images/elements/brands/facebook.png" alt="Facebook">
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h4 class="footer-title">Donaciones</h4>
+          <div class="donation-methods">
+            <a href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=8TPDXZKGRJQTY&source=url&fbclid=IwAR0yDjpKY6K9ABGB7Cb8e-eryPQF6kQJ66MEo4h9iALrYSBXrxFhroCj0-g" target="_blank" rel="noopener">
+              <img src="https://www.transformandonaciones.com/src/images/elements/brands/paypal.png" alt="PayPal">
+            </a>
+            <img src="https://www.transformandonaciones.com/src/images/elements/brands/zelle.png" alt="Zelle">
+          </div>
+          <p class="donation-note">*Donaciones Por Zelle deben hacerce por <a href="mailto:IBPN64@gmail.com">Correo electrónico</a></p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="copyright">Copyright 2026 Iglesia Bautista Para Las Naciones | Todos los Derechos Reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Donation Button -->
+  <div class="donation-fab">
+    <button class="donation-fab-btn" aria-label="Donar">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Donation Modal -->
+  <div class="donation-modal">
+    <div class="donation-modal-content" style="position: relative;">
+      <button class="donation-modal-close" aria-label="Cerrar">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+      <div class="donation-modal-header">
+        <h3>Haz una Donación</h3>
+        <p>Apoya nuestra misión de transformar vidas</p>
+      </div>
+      <div class="donation-options">
+        <a href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=8TPDXZKGRJQTY&source=url&fbclid=IwAR0yDjpKY6K9ABGB7Cb8e-eryPQF6kQJ66MEo4h9iALrYSBXrxFhroCj0-g" target="_blank" rel="noopener" class="donation-option">
+          <img src="https://www.transformandonaciones.com/src/images/elements/brands/paypal.png" alt="PayPal">
+          <div class="donation-option-text">
+            <strong>PayPal</strong>
+            <span>Donación segura</span>
+          </div>
+        </a>
+        <a href="mailto:IBPN64@gmail.com" class="donation-option">
+          <img src="https://www.transformandonaciones.com/src/images/elements/brands/zelle.png" alt="Zelle">
+          <div class="donation-option-text">
+            <strong>Zelle</strong>
+            <span>Enviar a IBPN64@gmail.com</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
